@@ -1,25 +1,24 @@
 const fs = require('fs').promises;
-const filePath = require('./database.json');
+const filePath = require('../database.json');
 
 async function readData(){
     try {
-        let data = await fs.readFile(filePath, "utf");
+        let data = await fs.readFile(filePath, "utf-8");
         return JSON.parse(data);
 
         
     } catch (error) {
         console.error(error);
+        console.log(error);
         
     }
 
 }
-
-
 
 async function writeData(data){
     try {
-        let data = await fs.writeFile(data, null, 2);
-        return JSON.parse(data);
+        await fs.writeFile(data, null, 2);
+        
 
         
     } catch (error) {
@@ -29,11 +28,8 @@ async function writeData(data){
 
 }
 
-
-
-
-
-
 module.exports = {
+    readData,
+    writeData
 
 };

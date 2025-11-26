@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const router = require('./routes/pages.js');
+const pagesRouter = require('./routes/pages.js');
 const userRoute = require('./routes/users.js');
 const ejs = require('ejs');
 const rateLimit = require('express-rate-limit');
@@ -17,7 +17,7 @@ const limiter = rateLimit({
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 app.use(limiter);
-app.use(router);
+app.use(pagesRouter);
 app.use(userRoute);
 app.use(express.static('public'));
 
