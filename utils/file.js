@@ -1,5 +1,8 @@
 const fs = require('fs').promises;
-const filePath = require('../database.json');
+const path = require('path');
+const filePath = './database.json';
+
+
 
 async function readData(){
     try {
@@ -17,7 +20,7 @@ async function readData(){
 
 async function writeData(data){
     try {
-        await fs.writeFile(data, null, 2);
+        await fs.writeFile(filePath,JSON.stringify/(data, null, 2));
         
 
         
