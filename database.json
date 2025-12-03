@@ -1,21 +1,22 @@
 {
-  "users": [
-    {
-      "Id": "John321",
-      "username": "John",
-      "email": "John@example.com"
-    },
-
-    {
-      "Id": "Maria321",
-      "username": "Maria",
-      "email": "Marian@example.com"
-    },
-
-    {
-      "Id": "Marsh321",
-      "username": "Harsh",
-      "email": "Harsh@example.com"
-    }
-  ]
+    "users": [
+        {
+            "id": "1",
+            "first_name": "John",
+            "username": "John23",
+            "email": "john@example.com"
+        },
+        {
+            "id": "2",
+            "first_name": "Maria",
+            "username": "Maria32",
+            "email": "Maria@example.com"
+        },
+        {
+            "id": "3",
+            "first_name": "Harsh",
+            "username": "Harsh24",
+            "email": "Harsh@example.com"
+        }
+    ]
 }
