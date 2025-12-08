@@ -16,7 +16,9 @@
     "express": "^5.1.0",
     "express-rate-limit": "^8.2.1",
     "fs": "^0.0.1-security",
-    "mongoose": "^8.6.4"
+    "mongoose": "^8.6.4",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   },
   "repository": {
     "type": "git",
