@@ -23,7 +23,7 @@ async function createUser(req, res) {
         username: req.body.username,
         email: req.body.email
     };
-    const user = new User(newuser);
+    const user = new User(newUser);
     await user.save();
 
     //push the data to the users array object
